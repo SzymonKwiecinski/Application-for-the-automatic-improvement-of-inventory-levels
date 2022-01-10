@@ -1,6 +1,6 @@
 # Application for the automatic improvement of inventory levels
 
-GUI Aplication. Pobiera wszystkie dokumenty z danego przediału czasowego, analizuje je. Tworzy na podstawie analizy nowe dokumenty korygujące błedy. Pozwala zapisać te dokumenty w systemie Subiekt GT 
+The application downloads all unconverted documents between a chosen date range. Create new documents fixing errors. Save changes in Subiekt GT (SQL Server).
 
 <p align="center">
 <img src="README_gif.gif">
@@ -38,23 +38,7 @@ GUI Aplication. Pobiera wszystkie dokumenty z danego przediału czasowego, anali
 
 ## Summary
 ### Purpose of application
-Celem aplikacji jest naprawienie błedu projektowego sytemu wymiany towarów Kanban. Ze względu na to że jeden towar ma kilka instacji w bazie danych powoduje to po czasie błedy i róznice w stanch faktycznych i magazynowych. 10 lat temu została podjęta decyzja że stany będzie wyrównywał ręcznie jeden z pracowników. Jednak od tego czasu liczba dokumentów zwiększyła się o ponad 100% co sprawia że poprawa manualna błędów jest nie możliwa. Program powstał aby poprawiać te błedy automatycznie.
-
-### Big picture. How it works step by step 
-1. Our employee takes from our client's warehouse empty boxes with barcodes. On barcodes are implemented information about the product like Id code, storage location, quantity in the box. 
-2. An employee scans barcodes and uploads them to our MS Server database (using another program that I created:). Based on these data, create a warehouse document.
-3. In the warehouse, an employee prepares an order and fills boxes with goods.   
-4. Then someone sends the warehouse document created earlier to our client using my program. The program does the following:  
-   1. Connects to SQL Server database
-   2. Exports chosen warehouse document
-   3. Converts it to a specific format given by the client 
-   4. Saves it as XML file
-   5. Connects to Google Cloud Virtual Maschine using SSH authentication and sends a file there
-   6. Our client downloads xml file from Google Cloud and easily imports it to its system in this example SAP Cloud platform
-### Extra Features:
-   1. Ability to connect to Google Cloud Virtual Machine and check files on them
-      1. Includes a delete file options
-   2. Ability to check histry of all operation and errors 
+The application aims to fix system errors. Because one good have more than one instance in the database is causing an increase in the differences in stock levels during the time. Because the number of documents increased by 300% during the last 10 years it is impossible to fix it manually. This application fixes stock levels automatically.
    
 ### Achivments
 1. Saves a employee about 4 hour a week.
