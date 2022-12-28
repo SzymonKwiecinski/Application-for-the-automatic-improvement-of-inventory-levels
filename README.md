@@ -24,10 +24,10 @@ The application downloads all unconverted documents between a chosen date range.
 </p>
 
 <p align="center">
-1. The program turns on. Reads the initial data from SQLite (id of all converted documents, and date of last converted document).
+1. The program turns on. Reads the initial data from SQLite (id of all converted documents, and date of the last converted document).
 </p>
 <p align="center">
-2. The user chooses the date range to find all documents to correct between this range. Download from SQL Server these documents to my program and start conversion and correct mistakes.
+2. A user chooses the date range to find all documents which have to be corrected (between this range). Import these documents from SQL Server to my program and start conversion and correct mistakes.
 </p>
 <p align="center">
 3. Creates new documents in Subiekt GT (using COM Microsoft technology) that correct stock level of goods
