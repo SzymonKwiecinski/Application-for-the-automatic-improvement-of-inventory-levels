@@ -1,6 +1,6 @@
 # Application for the automatic improvement of inventory levels
 
-The application downloads all unconverted documents between a chosen date range. Create new documents fixing errors. Save changes in Subiekt GT (SQL Server).
+The application downloads all unconverted documents (documents which use the wrong products) between a chosen date range. Create new documents which fix errors. Save changes in Subiekt GT (SQL Server).
 
 <p align="center">
 <img src="README_gif.gif">
