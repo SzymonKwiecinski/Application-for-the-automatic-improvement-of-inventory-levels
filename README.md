@@ -38,9 +38,9 @@ The application downloads all unconverted documents (documents which use the wro
 
 ## Summary
 ### Purpose of application
-The application aims to fix system errors. Because one good have more than one instance in the database is causing an increase in the differences in stock levels during the time. Because the number of documents increased by 300% during the last 10 years it is impossible to fix it manually. This application fixes stock levels automatically.
+The application aims to fix the system design defect. Cause one good has more than one instance in the database is causing an increase in the differences in stock levels during the time. Because the number of documents increased by 300% during the last 10 years it is impossible to fix it manually. This application fixes between stock levels automatically (catches between 50% to 75% wrong used instances).
    
-### Achivments
+### Achievments
 1. Saves a employee about 4 hour a week.
 2. Makes that the stock levels match, resulting in fewer errors.
 3. It allows you to control the prices of goods
